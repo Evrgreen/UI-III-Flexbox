@@ -220,13 +220,25 @@ h1, h2, h3, h4, h5 {
 			text-align:center;
 		}  */ 
 	/* contact section */
-		.contact{
-			padding:2em;
-			font-size:1.3em;
-		}
-		.contact li{
+		.contact ul li{
 			line-height:2em;
 		}
+		address{
+			padding-bottom:1%;
+		}
+		li a{
+			color:black;
+			font-size:1.5em;
+			text-decoration:none;
+		}
+			
+		 .tele::before{
+			content:"Call us: ";
+		}
+		 .email::before{
+			 content: "Email: ";
+
+		 }
 	/* footer */
 		footer{
 			text-align:center;
