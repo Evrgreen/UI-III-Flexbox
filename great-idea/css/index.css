@@ -125,15 +125,31 @@ h1, h2, h3, h4, h5 {
 
 		}
 /* ************************ */
-
 /* Main Content */
-	/* .main-content{
-		border-top: 4px solid teal;
-		margin:2em 6em;
-		padding-top: 3em;
-	}
-	/* feature and about section */
-		/* .features-about-block div{
+		
+
+		.main-content{
+			margin:0 10%;
+
+		}
+		.features-about-block{
+			display:flex;
+			justify-content:space-between;
+		}
+		.features-about-block div{
+			display:flex;
+			flex-direction: column;
+			justify-content:space-around;
+			height:20vh;
+			width:40%;
+		}
+		.features-about-block h2{
+			font-size:3.5em;
+		}
+		.features-about-block p{
+			font-size:2em;
+		}
+		/*.features-about-block div{
 			display:inline-block;
 			width:40vw;
 			padding-top:1.5em;
