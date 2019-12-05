@@ -75,7 +75,8 @@ h1, h2, h3, h4, h5 {
 		font-size:2em;
 	}
 	
-/* header elements */
+
+/* -----Header Start----- */
 	/* nav elements */
 		header nav{
 			display:flex;
@@ -83,7 +84,6 @@ h1, h2, h3, h4, h5 {
 			justify-content: space-between;
 			margin:0 2%;
 		}
-
 		header nav a{
 			border-bottom:5px solid transparent;
 			color:grey;
@@ -95,8 +95,7 @@ h1, h2, h3, h4, h5 {
 			box-sizing: border-box;
 			border-bottom:5px grey solid;
 			color:rgb(89, 82, 131);
-			font-weight:800;
-			
+			font-weight:800;	
 		}	
 	/* header landing */
 		.landing{
@@ -104,14 +103,11 @@ h1, h2, h3, h4, h5 {
 			justify-content:space-evenly;
 			padding:5%;
 		}
-		
 		.header-and-button{
 			display:flex;
 			flex-direction:column;
 			font-size:8em;
 		}
-		
-		
 		.header-and-button h1{
 			display:flex;
 			flex-direction: column;
@@ -132,16 +128,14 @@ h1, h2, h3, h4, h5 {
 		}
 		.landing-img img{
 			width:600px;
-
-
 		}
-/* ************************ */
-/* Main Content */
+/* ******Header End******** */
+
+/* ----Main Content start-------- */
 	.main-content{
 		margin:0 10%;
 	}
 		
-
 	/* features and About section */
 		.features-about-block{
 			border-top:4px black solid;
@@ -156,6 +150,7 @@ h1, h2, h3, h4, h5 {
 			height:20vh;
 			width:40%;
 		}
+
 	/* Main content Image */
 		.middle-img{
 			padding:5% 0;
@@ -176,7 +171,7 @@ h1, h2, h3, h4, h5 {
 		}
 		
 	/* contact section */
-	
+
 		.contact{
 			display:flex;
 			flex-direction:column;
@@ -186,17 +181,29 @@ h1, h2, h3, h4, h5 {
 			text-decoration:none;
 			color:grey;
 		}			
-		 .tele::before{
+		.tele::before{
 			content:"Call us: ";
 		}
-		 .email::before{
-			 content: "Email: ";
-
-		 }
-	/* footer */
-		footer{
-			margin-top:2%;
-			text-align:center;
+		.email::before{
+			content: "Email: ";
 		}
-	</body>
-</html>
+/* ******Main content end******* */
+/* footer */
+	footer{
+		margin-top:2%;
+		text-align:center;
+	}	
+
+
+
+	/* Start of Services page styling */
+
+	.services-header-container{
+		background-color:red;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+	}
+	.services-header-container h1{
+		font-size:3em;
+	}
