@@ -18,8 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -52,8 +50,8 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+
+ body{
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -64,3 +62,278 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* variables & animations */
+
+
+
+/* elements */
+	
+	 h2{
+		font-size:3.5em;
+	}
+	 p{
+		font-size:2em;
+	}
+	
+
+/* -----Header Start----- */
+	/* nav elements */
+		header nav{
+			display:flex;
+			font-size:2.5em;
+			justify-content: space-between;
+			margin:0 2%;
+		}
+		header nav a{
+			border-bottom:5px solid transparent;
+			color:grey;
+			vertical-align:center;
+			text-decoration:none;
+			transition: all 200ms ease-out;
+		} 
+		header nav a:hover{
+			box-sizing: border-box;
+			border-bottom:5px grey solid;
+			color:rgb(89, 82, 131);
+			font-weight:800;	
+		}	
+	/* header landing */
+		.landing{
+			display:flex;
+			justify-content:space-evenly;
+			padding:5%;
+		}
+		.header-and-button{
+			display:flex;
+			flex-direction:column;
+			font-size:8em;
+		}
+		.header-and-button h1{
+			display:flex;
+			flex-direction: column;
+			letter-spacing:10px;
+			text-align:center;
+		}
+		.header-and-button button{
+			background-color:whitesmoke;
+			border:5px grey solid;
+			border-radius:25vw;
+			display:inline-block;
+			font-size:.5em;
+			font-weight:800;
+			height:10vh;
+			letter-spacing: .1em;
+			margin-top:10%;
+			width:100%;			
+		}
+		.landing-img img{
+			width:600px;
+		}
+/* ******Header End******** */
+
+/* ----Main Content start-------- */
+	.main-content{
+		margin:0 10%;
+	}
+		
+	/* features and About section */
+		.features-about-block{
+			border-top:4px black solid;
+			display:flex;
+			justify-content:space-between;
+			padding-top:5%;
+		}
+		.features-about-block div{
+			display:flex;
+			flex-direction: column;
+			justify-content:space-around;
+			height:20vh;
+			width:40%;
+		}
+
+	/* Main content Image */
+		.middle-img{
+			padding:5% 0;
+			width:100%;
+		}
+
+	/* Services, products, vision section */
+		.services-product-vision-block{
+			border-bottom:4px black solid;
+			display:flex;
+			justify-content: space-between;
+			padding-bottom:5%;
+
+		}
+		.services-product-vision-block div{
+			display:inline-block;
+			width:30%;
+		}
+		
+	/* contact section */
+
+		.contact{
+			display:flex;
+			flex-direction:column;
+		}
+		.contact a{
+			font-size: 2em;
+			text-decoration:none;
+			color:grey;
+		}			
+		.tele::before{
+			content:"Call us: ";
+		}
+		.email::before{
+			content: "Email: ";
+		}
+/* ******Main content end******* */
+/* footer */
+	footer{
+		margin-top:2%;
+		text-align:center;
+	}	
+
+
+
+/* Start of Services page styling */
+	
+/* Header styling */
+	/* Navbar Styling */
+		.services-navbar a{
+			display:flex;
+			align-self:center;
+			align-content:center;
+		}
+
+
+		.services-navbar img{
+			height:5vh;
+			width:110%;
+		}
+
+		.services-header-container{
+			display:flex;
+			flex-direction:column;
+			margin:5%;
+		}
+			
+		
+	/* Main Header container for image and intro paragraph */
+		.services-header-container .header-image img{
+			width:100%;
+		}
+		.services-header-container .header-container-text{
+			display:flex;
+			align-items:space-around;
+			flex-direction: column;
+			margin-top:3%;
+		}
+		.services-header-container h1{
+			font-size:3em;
+		}
+/* End of header section */
+	
+/* Main Content Styling : 2x3 grid and facts section */
+
+	/* Wrapper styling */
+		.section-main-wrapper{
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+			margin: 0 5%;
+
+		}
+	/* Start of 2x3 grid */
+		.section-main-wrapper .box{
+			margin-bottom: 10%;
+			width:45%;
+			padding:3%;
+		}
+		.box{
+			background-color:rgb(255, 240, 240);
+			border:2px solid rgb(0, 0, 0);
+			display:flex;
+			flex-direction: column;
+		}
+		.box p{
+			align-self:center;
+			margin-bottom:5%;
+		}
+		.box button{
+			align-self: flex-start;
+			background-color:white;
+			border: black 2px solid;
+			border-radius: .3em;
+			font-size:2em;
+			justify-self: center;
+			padding:3% 5%;
+		}
+ 	/* end of 2x3 grid */
+	/* Start of fact section */
+		.facts-section{
+			font-size:1em;
+			display:flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+		}
+	
+		.facts-section .facts-text{
+			width:45%;
+			padding:1%;
+		}
+		.facts-text h2{
+			font-size:3em;
+		}
+		.facts-text p{
+			font-size:1.5em;
+		}
+		.facts-text ul{
+			font-size:1.5em;
+			margin:1% 0 0 3%;
+		}
+		.facts-text li{
+			list-style: square  inside;
+		}
+		.facts-section .facts-image{
+			display:flex;
+			width:45%;
+		}
+		.facts-section .facts-image img{
+			align-self:center;
+			width:100%;
+		}
+	/* end of facts section */
+/* end of main wrapper */
+/* footer */
+ .service-footer{
+	 display:flex;
+	 justify-content:center;
+	 align-items:center;
+	 height:10vh;
+ }
+/* -----------End of HTML Body--------- */
+ /* Media queries */
+@media (max-width:1000px){
+	.services-navbar{
+		justify-content: center;
+	}
+	nav a{
+		font-size: .5em;
+		margin:0 .5% 0;
+	}
+
+
+	.section-main-wrapper{
+		flex-flow: column nowrap;
+		align-items:center;
+	}
+	.section-main-wrapper .box{
+		align-items: center;
+		width:90%
+	}
+	.box button{
+		align-self:center;
+		width:75%;
+	}
+}
