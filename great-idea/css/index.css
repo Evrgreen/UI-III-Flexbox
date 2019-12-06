@@ -196,65 +196,85 @@ h1, h2, h3, h4, h5 {
 
 
 
-	/* Start of Services page styling */
-
-	.services-header-container{
-		display:flex;
-		flex-direction:column;
-		margin:5%;
-		
-		
-	}
-	.services-header-container .header-image img{
-		width:100%;
-	}
-	.services-header-container .header-container-text{
-		display:flex;
-		align-items:space-around;
-		flex-direction: column;
-		margin-top:3%;
-	}
-	.services-header-container h1{
-		font-size:3em;
-	}
-/* End of header section */
-.section-main-wrapper{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-between;
-	margin: 0 5%;
-
-}
-.section-main-wrapper .box{
-	margin-bottom: 10%;
-	width:45%;
-	padding:3%;
-}
-.box{
-	border:2px solid black;
-	display:flex;
-	flex-direction: column;
-}
-.box p{
+/* Start of Services page styling */
 	
-	 margin: 5% 0 5%;
+/* Header styling */
+	/* Navbar Styling */
+		.services-navbar a{
+			display:flex;
+			align-self:center;
+			align-content:center;
+		}
 
-}
-.box button{
-	align-self: flex-start;
-	background-color:white;
-	border: black 2px solid;
-	border-radius: .3em;
-	font-size:2em;
-	justify-self: center;
-	padding:3% 5%;
-}
+
+		.services-navbar img{
+			height:5vh;
+			width:110%;
+		}
+
+		.services-header-container{
+			display:flex;
+			flex-direction:column;
+			margin:5%;
+		}
+			
+		
+	/* Main Header container for image and intro paragraph */
+		.services-header-container .header-image img{
+			width:100%;
+		}
+		.services-header-container .header-container-text{
+			display:flex;
+			align-items:space-around;
+			flex-direction: column;
+			margin-top:3%;
+		}
+		.services-header-container h1{
+			font-size:3em;
+		}
+/* End of header section */
+	
+/* Main Content Styling : 2x3 grid and facts section */
+
+	/* Wrapper styling */
+		.section-main-wrapper{
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+			margin: 0 5%;
+
+		}
+	/* Start of 2x3 grid */
+		.section-main-wrapper .box{
+			margin-bottom: 10%;
+			width:45%;
+			padding:3%;
+		}
+		.box{
+			background-color:rgb(255, 240, 240);
+			border:2px solid rgb(0, 0, 0);
+			display:flex;
+			flex-direction: column;
+		}
+		.box p{
+			align-self:center;
+			margin-bottom:5%;
+		}
+		.box button{
+			align-self: flex-start;
+			background-color:white;
+			border: black 2px solid;
+			border-radius: .3em;
+			font-size:2em;
+			justify-self: center;
+			padding:3% 5%;
+		}
  	/* end of 2x3 grid */
 	/* Start of fact section */
-	.facts-section{
+		.facts-section{
 			font-size:1em;
 			display:flex;
-			flex-flow: row no-wrap;
+			flex-flow: row wrap;
 			justify-content: space-between;
 		}
 	
@@ -277,7 +297,7 @@ h1, h2, h3, h4, h5 {
 		}
 		.facts-section .facts-image{
 			display:flex;
-			width:35%;
+			width:45%;
 		}
 		.facts-section .facts-image img{
 			align-self:center;
@@ -285,9 +305,35 @@ h1, h2, h3, h4, h5 {
 		}
 	/* end of facts section */
 /* end of main wrapper */
+/* footer */
  .service-footer{
 	 display:flex;
 	 justify-content:center;
 	 align-items:center;
 	 height:10vh;
  }
+/* -----------End of HTML Body--------- */
+ /* Media queries */
+@media (max-width:1000px){
+	.services-navbar{
+		justify-content: center;
+	}
+	nav a{
+		font-size: .5em;
+		margin:0 .5% 0;
+	}
+
+
+	.section-main-wrapper{
+		flex-flow: column nowrap;
+		align-items:center;
+	}
+	.section-main-wrapper .box{
+		align-items: center;
+		width:90%
+	}
+	.box button{
+		align-self:center;
+		width:75%;
+	}
+}
